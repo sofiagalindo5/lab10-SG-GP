@@ -1,3 +1,5 @@
+import math
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -5,7 +7,18 @@ calculator.py
 One function per operation, in order.
 """
 # First example
+
 def add(a, b): 
-    pass
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+def div(a, b):
+
+
 
 

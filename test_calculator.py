@@ -1,20 +1,28 @@
+# https://github.com/sofiagalindo5/lab10-SG-GP.git
+# Partner 1: Gabrielle Polito
+# Partner 2: Sofia Galindo
+
 import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+    def test_add(self): # 3 assertions
+        self.assertEqual(add(2, 3), 5)
+        self.assertEqual(add(-1, 1), 0)
+        self.assertEqual(add(0, 0), 0)
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+    def test_subtract(self): # 3 assertions
+        self.assertEqual(subtract(-1, -1), 0)
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(0, 4), -4)
     # ##########################
 
     ######## Partner 1
     def test_multiply(self): # 3 assertions
         self.assertEqual(multiply(2,0), 0)
         self.assertEqual(multiply(1,9), 9)
-        self.assertEqial(multiply(10,10), 100)
+        self.assertEqual(multiply(10,10), 100)
 
     def test_divide(self): # 3 assertions
         self.assertRaises(divide(0, 2), ZeroDivisionError)

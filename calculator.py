@@ -1,3 +1,7 @@
+# https://github.com/sofiagalindo5/lab10-SG-GP.git
+# Partner 1: Sofia Galindo
+# Partner 2: Gabrielle Polito
+
 import math
 
 def square_root(a):
